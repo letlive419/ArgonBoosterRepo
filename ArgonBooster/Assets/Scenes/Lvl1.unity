@@ -520,6 +520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xSpeed: 25
   xMeters: 9
+  yMeters: 6
 --- !u!4 &1243195148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2313541247059755220, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
