@@ -5,9 +5,13 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
-    [Tooltip("meters per second")] [SerializeField] float Speed = 4f;
-    [Tooltip("meters")] [SerializeField] float xMeters = 5f;
-    [Tooltip("meters")] [SerializeField] float yMeters = 5f;
+    [Tooltip("meters per second")] [SerializeField] float Speed = 30f;
+    [Tooltip("meters")] [SerializeField] float xMeters = 12f;
+    [Tooltip("meters")] [SerializeField] float yMeters = 6f;
+    [SerializeField] float positionPitchFactor = -4f;
+    [SerializeField] float controlPitchFactor = -1f;
+    [SerializeField] float positionYawFactor = 3f;
+    [SerializeField] float controlRollFactor = -20f;
 
     float horizontalThrow, verticalThrow;
 
@@ -43,7 +47,14 @@ public class Player : MonoBehaviour
     }
     void ProcessRotation()
     {
-        float pitchDueToPosition;
-        transform.localRotation = Quaternion.Euler(0f,0f,0f);
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControl = verticalThrow * controlPitchFactor;
+        float pitch = pitchDueToPosition + pitchDueToControl;
+
+        float yaw = transform.localPosition.x * positionYawFactor;
+
+        float roll = horizontalThrow * controlRollFactor;
+
+        transform.localRotation = Quaternion.Euler(pitch,yaw,roll);
     }
 }
