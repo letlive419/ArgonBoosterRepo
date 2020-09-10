@@ -1595,14 +1595,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1243195148}
     m_Modifications:
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: TrailModule.widthOverTrail.scalar
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 603.7
-      objectReference: {fileID: 0}
     - target: {fileID: 6434692884179997026, guid: 897102666f80647c8aff025b4175f390, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4
