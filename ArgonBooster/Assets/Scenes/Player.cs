@@ -15,17 +15,30 @@ public class Player : MonoBehaviour
 
     float horizontalThrow, verticalThrow;
 
+    bool isControlEnabled = true;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+   
     // Update is called once per frame
     void Update()
     {
-        ProcessPosition();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessPosition();
+            ProcessRotation();
+        } 
+    }
+
+    void stopPlayerMovement()
+    {
+        print("Dead");
+        isControlEnabled = false;
+        
     }
 
     private void ProcessPosition()
@@ -41,7 +54,7 @@ public class Player : MonoBehaviour
         float rawY = transform.localPosition.y + yOffSet;
         float newY = Mathf.Clamp(rawY, -yMeters, yMeters);
 
-        print(horizontalThrow);
+        
 
         transform.localPosition = new Vector3(newX, newY, transform.localPosition.z);
     }
