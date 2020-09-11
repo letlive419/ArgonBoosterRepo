@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MusicPlayer : MonoBehaviour
 {
-
+   
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        int numOfMusPlayers = FindObjectsOfType<MusicPlayer>().Length;
+        if (numOfMusPlayers > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
     // Start is called before the first frame update
     void Start()

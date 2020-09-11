@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d947d39d70d4941c194a21b5c95432de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathFX: {fileID: 0}
 --- !u!1001 &2308879002755180288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -366,26 +367,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2313541247059755220}
     m_Modifications:
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: TrailModule.widthOverTrail.scalar
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6434692884179997024, guid: 897102666f80647c8aff025b4175f390, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6434692884179997026, guid: 897102666f80647c8aff025b4175f390, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.91

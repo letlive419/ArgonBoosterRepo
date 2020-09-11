@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6539423794246736024}
   - component: {fileID: 6532710725796072276}
   - component: {fileID: 6522826704447751144}
+  - component: {fileID: 2345967448460243592}
   m_Layer: 0
   m_Name: Mine Sample 1 (1)
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6544583239730218668}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 715.1, y: 51, z: 387.2}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2345967448460243592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6544583239730218668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.545058, y: 2.7143958, z: 2.545058}
+  m_Center: {x: 0, y: 0, z: -0.0000019073486}
 --- !u!1 &6545021455341623972
 GameObject:
   m_ObjectHideFlags: 0

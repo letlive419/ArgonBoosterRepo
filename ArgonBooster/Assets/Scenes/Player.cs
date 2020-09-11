@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     {
         print("Dead");
         isControlEnabled = false;
+
         
     }
 
