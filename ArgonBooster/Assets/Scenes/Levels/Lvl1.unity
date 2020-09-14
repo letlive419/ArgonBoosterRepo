@@ -189,6 +189,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &81829567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8738766880998487677, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+  m_PrefabInstance: {fileID: 2308879001381125999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &146878276
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1379,6 +1384,11 @@ Transform:
   m_Father: {fileID: 1692878990}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1740368021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2308879002341115232, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+  m_PrefabInstance: {fileID: 2308879001381125999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1755482602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,10 +1628,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 1243195146, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243195146, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1740368021}
+    - target: {fileID: 1243195146, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 81829567}
     - target: {fileID: 988671616785784672, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
       propertyPath: DeathFX
       value: 
       objectReference: {fileID: 1783920811}
+    - target: {fileID: 2308879002341115232, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2308879002341115261, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
       propertyPath: CollisionModule.enabled
       value: 1
@@ -1686,12 +1712,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4824207705032616150, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4824207705032616151, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8738766880998487648, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
       propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8738766880998487677, guid: 32870a6f2061c4bdaa0692e220dc7d66, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

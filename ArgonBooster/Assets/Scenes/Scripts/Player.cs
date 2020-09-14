@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] float controlPitchFactor = -1f;
     [SerializeField] float positionYawFactor = 3f;
     [SerializeField] float controlRollFactor = -20f;
+    [SerializeField] GameObject[] guns;
 
     float horizontalThrow, verticalThrow;
 
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
         {
             ProcessPosition();
             ProcessRotation();
+            ProcessGuns();
         } 
     }
 
@@ -70,5 +72,34 @@ public class Player : MonoBehaviour
         float roll = horizontalThrow * controlRollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch,yaw,roll);
+    }
+
+    void ProcessGuns()
+    {
+        if (CrossPlatformInputManager.GetButton("fire"))
+        {
+            activateGuns();
+        }
+        else
+        {
+            DeActivateGuns();
+        }
+
+    }
+
+    private void activateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+            
+        }
+    }
+    private void DeActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 }
