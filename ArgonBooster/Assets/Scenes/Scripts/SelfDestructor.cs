@@ -2,24 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class SelfDestructor : MonoBehaviour
 {
-
-    [SerializeField] GameObject DeathFX;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(gameObject, 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    private void OnParticleCollision(GameObject other)
-    {
-        //DeathFX.SetActive(true);
-        Destroy(gameObject);
     }
 }
