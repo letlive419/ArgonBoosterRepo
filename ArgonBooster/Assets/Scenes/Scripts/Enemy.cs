@@ -9,7 +9,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject DeathFX;
     [SerializeField] Transform parent;
     [SerializeField] int pointsForKills = 12;
-
+    [SerializeField] int hitPoints = 3;
+ 
 
     ScoreBoard scoreBoard;
 
@@ -36,10 +37,16 @@ public class Enemy : MonoBehaviour
     {
 
         scoreBoard.scoreHit(pointsForKills);
+        hitPoints--;
+        DestroyObject();
+
+    }
+
+    private void DestroyObject()
+    {
         GameObject fx = Instantiate(DeathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
-        
-        Destroy(gameObject);
 
+        Destroy(gameObject);
     }
 }

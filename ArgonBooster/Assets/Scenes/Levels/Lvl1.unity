@@ -1745,6 +1745,10 @@ PrefabInstance:
       propertyPath: DeathFX
       value: 
       objectReference: {fileID: 4290426450132121248, guid: f62b2d3fe24214fb0969fb5ceedde5eb, type: 3}
+    - target: {fileID: 1339007305, guid: 537bd3caa8ad34e018aff494338c4b8e, type: 3}
+      propertyPath: hitPoints
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6539423794246736024, guid: 537bd3caa8ad34e018aff494338c4b8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 217.73007
